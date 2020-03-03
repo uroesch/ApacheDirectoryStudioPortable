@@ -8,7 +8,4 @@ This project is in early beta stage.
 
 ## Todo
 - [ ] Documentation
-- [ ] Java Use testing
 - [ ] Download script to fetch the application ZIP file
-
-
