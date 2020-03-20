@@ -43,12 +43,7 @@ ${SegmentInit}
 	${ReadLauncherConfig} $JavaMode Activate Java
 	${If} $JavaMode == find
 	${OrIf} $JavaMode == require
-		${If} $Bits == 64
-			${FindCommonJavaDirectory} '64'
-		${EndIf}
-		${If} $JavaDirectory == ''
-			${FindCommonJavaDirectory} ''
-		${EndIf}
+		${FindCommonJavaDirectory} ''
 		${IfNot} ${FileExists} $JavaDirectory
 			ClearErrors
 			ReadRegStr $0 HKLM "Software\JavaSoft\Java Runtime Environment" CurrentVersion
