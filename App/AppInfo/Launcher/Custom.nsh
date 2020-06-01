@@ -43,7 +43,12 @@ ${SegmentInit}
 	${ReadLauncherConfig} $JavaMode Activate Java
 	${If} $JavaMode == find
 	${OrIf} $JavaMode == require
-		${FindCommonJavaDirectory} ''
+		${If} $Bits != 64
+			MessageBox MB_OK|MB_ICONSTOP "This version of Apache Directory Studio requires a 64bit runtime environment."
+			Quit
+		${Else}
+			${FindCommonJavaDirectory} '64'
+		${EndIf}
 		${IfNot} ${FileExists} $JavaDirectory
 			ClearErrors
 			ReadRegStr $0 HKLM "Software\JavaSoft\Java Runtime Environment" CurrentVersion
