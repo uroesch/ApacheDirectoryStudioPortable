@@ -1,6 +1,6 @@
 [![Build](https://github.com/uroesch/ApacheDirectoryStudioPortable/workflows/build-package/badge.svg)](https://github.com/uroesch/ApacheDirectoryStudioPortable/actions?query=workflow%3Abuild-package)
 [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/uroesch/ApacheDirectoryStudioPortable?include_prereleases)](https://github.com/uroesch/ApacheDirectoryStudioPortable/releases)
-[![Runs on](https://img.shields.io/badge/runs%20on-Win64%20%26%20Win32-blue)](#runtime-dependencies)
+[![Runs on](https://img.shields.io/badge/runs%20on-Win64-blue)](#runtime-dependencies)
 [![Depends on](https://img.shields.io/badge/depends%20on-Java-blue)](#runtime-dependencies)
 
 # Apache Directory Studio Portable for PortableApps.com
@@ -27,16 +27,19 @@ Apache Directory Studio is available for Windows, macOS and Linux.
 
 | OS              | 32-bit             | 64-bit              | 
 |-----------------|:------------------:|:-------------------:|
-| Windows XP      | ![nd][nd]          | ![nd][nd]           | 
-| Windows Vista   | ![ps][ps]          | ![ps][ps]           | 
-| Windows 7       | ![ps][ps]          | ![ps][ps]           |  
-| Windows 8       | ![ps][ps]          | ![ps][ps]           |  
-| Windows 10      | ![fs][fs]          | ![fs][fs]           |
+| Windows XP      | ![ns][ns]          | ![nd][nd]           | 
+| Windows Vista   | ![ns][ns]          | ![ps][ps]           | 
+| Windows 7       | ![ns][ns]          | ![ps][ps]           |  
+| Windows 8       | ![ns][ns]          | ![ps][ps]           |  
+| Windows 10      | ![ns][ns]          | ![fs][fs]           |
 
 Legend: ![ns][ns] not supported;  ![nd][nd] no data; ![ps][ps] supported but not verified; ![fs][fs] verified;
 
+**Note**: With upstream release 2.0.0.v20200411-M15 the ![32bit Windows build has been dropped][32bit-build].
+The last release with 32bit support ist [last-32bit][2.0.0.v20180908-M14].
+
 ## Status 
-This PortableApp project is in early beta stage. 
+This PortableApp project is in beta stage. 
 
 ## Todo
 - [ ] Documentation
@@ -62,3 +65,5 @@ powershell Other/Update/Update.ps1
 [ns]: Other/Icons/no_support.svg
 [ps]: Other/Icons/probably_supported.svg
 [fs]: Other/Icons/full_support.svg
+[32bit-build]: https://github.com/apache/directory-studio/commit/f52d6041fcb3cad0f039903a5c371b1fb8b8d490
+[last-32bit]: https://github.com/uroesch/ApacheDirectoryStudioPortable/releases/tag/2.0.0.v20180908-M14-beta3-uroesch
