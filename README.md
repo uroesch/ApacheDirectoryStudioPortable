@@ -16,13 +16,13 @@ upgraded with additional ones. These plugins can even run within Eclipse itself.
 Apache Directory Studio is available for Windows, macOS and Linux.
 
 ## Runtime dependencies
-* 32-bit or 64-bit version of Windows.
-* 32-bit version of Java e.g.
-  [OpenJDK JRE](https://portableapps.com/apps/utilities/OpenJDKJRE),
-  [OpenJDK](https://portableapps.com/apps/utilities/OpenJDK),
-  [JRE](https://portableapps.com/apps/utilities/java_portable) or
-  [JDK](https://portableapps.com/apps/utilities/jdkportable) 
-  
+* 64-bit version of Windows.
+* 64-bit version of Java e.g.
+  [OpenJDK JRE 64](https://portableapps.com/apps/utilities/OpenJDKJRE64),
+  [OpenJDK 64](https://portableapps.com/apps/utilities/OpenJDK64),
+  [JRE 64](https://portableapps.com/apps/utilities/java_portable_64) or
+  [JDK 64](https://portableapps.com/apps/utilities/jdkportable64) 
+
 ## Support matrix
 
 | OS              | 32-bit             | 64-bit              | 
