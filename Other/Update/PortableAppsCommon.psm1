@@ -193,7 +193,7 @@ Function Download-Checksum() {
     Foreach ($Sum in $Result.Split("`n")) {
       # remove all the spaces, I'm looking at you ApacheDirStudio :)
       $Sum = $Sum.Trim() -replace "\s+", ""
-      If ($Sum -NotMatch $Pattern) { Continue } 
+      If ($Sum -NotMatch $Pattern) { Continue }
       $Sum = $Sum.Trim() -replace "($Pattern).*", "`$1"
       Debug debug "Downloaded checksum: $Sum"
       Return $Sum
