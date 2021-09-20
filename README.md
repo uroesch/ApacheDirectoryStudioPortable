@@ -33,8 +33,9 @@ Apache Directory Studio is available for Windows, macOS and Linux.
 | Windows 7       | ![ns][ns]          | ![ps][ps]           |  
 | Windows 8       | ![ns][ns]          | ![ps][ps]           |  
 | Windows 10      | ![ns][ns]          | ![fs][fs]           |
+| Windows 11      | ![na][na]          | ![ps][ps]           |
 
-Legend: ![ns][ns] not supported;  ![nd][nd] no data; ![ps][ps] supported but not verified; ![fs][fs] verified;
+Legend: ![ns][ns] not supported; ![na][na] not applicable; ![nd][nd] no data; ![ps][ps] supported but not verified; ![fs][fs] verified;
 
 **Note**: With upstream release 2.0.0.v20200411-M15 the ![32bit Windows build has been dropped][32bit-build].
 The last release with 32bit support ist [last-32bit][2.0.0.v20180908-M14].
@@ -210,6 +211,7 @@ pwsh Other/Update/Update.ps1
 <!-- End include BUILD.md -->
 
 [nd]: Other/Icons/no_data.svg
+[na]: Other/Icons/not_applicable.svg
 [ns]: Other/Icons/no_support.svg
 [ps]: Other/Icons/probably_supported.svg
 [fs]: Other/Icons/full_support.svg
