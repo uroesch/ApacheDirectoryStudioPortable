@@ -28,8 +28,8 @@ Apache Directory Studio is available for Windows, macOS and Linux.
 
 | OS              | 32-bit             | 64-bit              | 
 |-----------------|:------------------:|:-------------------:|
-| ReactOS 0.4.14  | ![nd][nd]          | ![nd][nd]           |
-| ReactOS 0.4.15  | ![nd][nd]          | ![nd][nd]           |
+| ReactOS 0.4.14  | ![ns][ns]          | ![na][na]           |
+| ReactOS 0.4.15  | ![ns][ns]          | ![nd][nd]           |
 | Windows XP      | ![ns][ns]          | ![nd][nd]           | 
 | Windows Vista   | ![ns][ns]          | ![ps][ps]           | 
 | Windows 7       | ![ns][ns]          | ![ps][ps]           |  
