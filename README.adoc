@@ -44,15 +44,15 @@ image:https://img.shields.io/github/downloads/{github-user}/{app-name}/total[
   title="GitHub All Release Downloads"
 ]
 
-ifndef::env-github[]
+ifndef::env-github,env-gitlab[]
 image:../../App/AppInfo/appicon_128.png[float="left"]
-endif::env-github[]
+endif::env-github,env-gitlab[]
 
-ifdef::env-github[]
+ifdef::env-github,env-gitlab[]
 +++
 <img src="App/AppInfo/appicon_128.png" align="left">
 +++
-endif::env-github[]
+endif::env-github,env-gitlab[]
 
 https://directory.apache.org/studio/[{app-name-spaced}] is a complete directory
 tooling platform intended to be used with any LDAP server however it is 
