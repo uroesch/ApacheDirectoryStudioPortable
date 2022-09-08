@@ -1,10 +1,10 @@
 = {app-name-spaced} for PortableApps.com
 :author: Urs Roesch
-:app-name-spaced: Apache Directory Studio Portable
+:app-name-spaced: Apache Directory Studio
 :app-name: ApacheDirectoryStudioPortable
 :github-user: uroesch
 :app-project-url: https://github.com/{github-user}/{app-name}
-:upstream-name: ApacheDirectoryStudio
+:upstream-name: {app-name-spaced}
 :upstream-url: https://directory.apache.org/studio/
 :shields-url: https://img.shields.io/github/v/release/{github-user}/{app-name}
 :icons: font
@@ -54,11 +54,11 @@ ifdef::env-github,env-gitlab[]
 +++
 endif::env-github,env-gitlab[]
 
-https://directory.apache.org/studio/[{app-name-spaced}] is a complete directory
-tooling platform intended to be used with any LDAP server however it is 
-particularly designed for use with ApacheDS. It is an Eclipse RCP application, 
-composed of several Eclipse (OSGi) plugins, that can be easily upgraded with 
-additional ones. These plugins can even run within Eclipse itself.
+{upstream-url}[{upstream-name}] is a complete directory tooling platform 
+intended to be used with any LDAP server however it is particularly designed 
+for use with ApacheDS. It is an Eclipse RCP application, composed of several 
+Eclipse (OSGi) plugins, that can be easily upgraded with additional ones. 
+These plugins can even run within Eclipse itself.
 
 Apache Directory Studio is available for Windows, macOS and Linux.
 
