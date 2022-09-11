@@ -2,11 +2,11 @@
 :author: Urs Roesch
 :app-name-spaced: Apache Directory Studio
 :app-name: ApacheDirectoryStudioPortable
-:github-user: uroesch
-:app-project-url: https://github.com/{github-user}/{app-name}
+:git-user: uroesch
+:app-project-url: https://github.com/{git-user}/{app-name}
 :upstream-name: {app-name-spaced}
 :upstream-url: https://directory.apache.org/studio/
-:shields-url: https://img.shields.io/github/v/release/{github-user}/{app-name}
+:shields-url: https://img.shields.io/github/v/release/{git-user}/{app-name}
 :icons: font
 :imagesdir: Other/Images
 :no-data: image:../Icons/no_data.svg[]
@@ -14,7 +14,11 @@
 :not-applicable: image:../Icons/not_applicable.svg[]
 :probably-supported: image:../Icons/probably_supported.svg[]
 :full-support: image:../Icons/full_support.svg[]
+ifdef::env-gitlab[]
+:git-base-url: https://gitlab.com/{git-user}
+endif::env-gitlab[]
 ifdef::env-github[]
+:git-base-url: https://github.com/{git-user}
 :tip-caption: :bulb:
 :note-caption: :information_source:
 :important-caption: :heavy_exclamation_mark:
@@ -40,7 +44,7 @@ image:{shields-url}?include_prereleases[
 <<runtime-dependencies,
   image:https://img.shields.io/badge/depends%20on-Java-blue[Depends on]>>
 
-image:https://img.shields.io/github/downloads/{github-user}/{app-name}/total[
+image:https://img.shields.io/github/downloads/{git-user}/{app-name}/total[
   title="GitHub All Release Downloads"
 ]
 
@@ -171,9 +175,9 @@ have not been tested.
 
 [source,console,subs=attributes]
 ----
-git clone https://github.com/uroesch/PortableApps.comInstaller.git
-git clone -b patched https://github.com/uroesch/PortableApps.comLauncher.git
-git clone https://github.com/uroesch/{app-name}.git
+git clone https://github.com/{git-user}/PortableApps.comInstaller.git
+git clone -b patched https://github.com/{git-user}/PortableApps.comLauncher.git
+git clone {git-base-url}/{app-name}.git
 ----
 
 ====== Build installer
@@ -197,7 +201,7 @@ For a Docker build run the following command.
 
 [source,console,subs=attributes]
 ----
-git clone https://github.com/uroesch/{app-name}.git
+git clone {git-base-url}/{app-name}.git
 ----
 
 ====== Build installer
@@ -236,9 +240,9 @@ Xvfb ${DISPLAY} -ac &
 
 [source,console,subs=attributes]
 ----
-git clone https://github.com/uroesch/PortableApps.comInstaller.git
-git clone -b patched https://github.com/uroesch/PortableApps.comLauncher.git
-git clone https://github.com/uroesch/{app-name}.git
+git clone https://github.com/{git-user}/PortableApps.comInstaller.git
+git clone -b patched https://github.com/{git-user}/PortableApps.comLauncher.git
+git clone {git-base-url}/{app-name}.git
 ----
 
 ====== Build installer
@@ -278,9 +282,9 @@ Xvfb ${DISPLAY} -ac &
 
 [source,console,subs=attributes]
 ----
-git clone https://github.com/uroesch/PortableApps.comInstaller.git
-git clone -b patched https://github.com/uroesch/PortableApps.comLauncher.git
-git clone https://github.com/uroesch/{app-name}.git
+git clone https://github.com/{git-user}/PortableApps.comInstaller.git
+git clone -b patched https://github.com/{git-user}/PortableApps.comLauncher.git
+git clone {git-base-url}/{app-name}.git
 ----
 
 ====== Build installer
