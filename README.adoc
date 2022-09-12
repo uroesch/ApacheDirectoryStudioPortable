@@ -58,10 +58,10 @@ ifdef::env-github,env-gitlab[]
 +++
 endif::env-github,env-gitlab[]
 
-{upstream-url}[{upstream-name}] is a complete directory tooling platform 
-intended to be used with any LDAP server however it is particularly designed 
-for use with ApacheDS. It is an Eclipse RCP application, composed of several 
-Eclipse (OSGi) plugins, that can be easily upgraded with additional ones. 
+{upstream-url}[{upstream-name}] is a complete directory tooling platform
+intended to be used with any LDAP server however it is particularly designed
+for use with ApacheDS. It is an Eclipse RCP application, composed of several
+Eclipse (OSGi) plugins, that can be easily upgraded with additional ones.
 These plugins can even run within Eclipse itself.
 
 Apache Directory Studio is available for Windows, macOS and Linux.
@@ -86,8 +86,8 @@ Apache Directory Studio is available for Windows, macOS and Linux.
 | Windows Vista  | {no-support}     | {probably-supported}
 | Windows 7      | {no-support}     | {probably-supported}
 | Windows 8      | {no-support}     | {probably-supported}
-| Windows 10     | {no-support}     | {full-support} 
-| Windows 11     | {not-applicable} | {full-support} 
+| Windows 10     | {no-support}     | {full-support}
+| Windows 11     | {not-applicable} | {full-support}
 |===
 
 Legend:
@@ -98,11 +98,11 @@ Legend:
   {full-support} verified;
 
 [NOTE]
-With upstream release 2.0.0.v20200411-M15 the 
+With upstream release 2.0.0.v20200411-M15 the
 https://github.com/apache/directory-studio/commit/f52d6041fcb3cad0f039903a5c371b1fb8b8d490[
   32bit Windows build has been dropped
 ].
-The last release with 32bit support ist 
+The last release with 32bit support ist
 {app-project-url}/releases/tag/2.0.0.v20180908-M14-beta3-uroesch[
   2.0.0.v20180908-M14
 ].
@@ -175,8 +175,8 @@ have not been tested.
 
 [source,console,subs=attributes]
 ----
-git clone https://github.com/{git-user}/PortableApps.comInstaller.git
-git clone -b patched https://github.com/{git-user}/PortableApps.comLauncher.git
+git clone {git-base-url}/PortableApps.comInstaller.git
+git clone -b patched https://github.com/uroesch/PortableApps.comLauncher.git
 git clone {git-base-url}/{app-name}.git
 ----
 
@@ -240,8 +240,8 @@ Xvfb ${DISPLAY} -ac &
 
 [source,console,subs=attributes]
 ----
-git clone https://github.com/{git-user}/PortableApps.comInstaller.git
-git clone -b patched https://github.com/{git-user}/PortableApps.comLauncher.git
+git clone {git-base-url}/PortableApps.comInstaller.git
+git clone -b patched {git-base-url}/PortableApps.comLauncher.git
 git clone {git-base-url}/{app-name}.git
 ----
 
@@ -282,8 +282,8 @@ Xvfb ${DISPLAY} -ac &
 
 [source,console,subs=attributes]
 ----
-git clone https://github.com/{git-user}/PortableApps.comInstaller.git
-git clone -b patched https://github.com/{git-user}/PortableApps.comLauncher.git
+git clone {git-base-url}/PortableApps.comInstaller.git
+git clone -b patched {git-base-url}/PortableApps.comLauncher.git
 git clone {git-base-url}/{app-name}.git
 ----
 
