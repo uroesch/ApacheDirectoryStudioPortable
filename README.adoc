@@ -24,9 +24,9 @@ ifdef::env-github[]
 :important-caption: :heavy_exclamation_mark:
 :caution-caption: :fire:
 :warning-caption: :warning:
-endif::[]
-:doctype: book
+endif::env-github[]
 
+ifdef::env-github[]
 image:{app-project-url}/workflows/build-linux/badge.svg[
   title="Linux Build",
   link={app-project-url}/actions?query=workflow%3Abuild-linux
@@ -47,6 +47,7 @@ image:{shields-url}?include_prereleases[
 image:https://img.shields.io/github/downloads/{git-user}/{app-name}/total[
   title="GitHub All Release Downloads"
 ]
+endif::env-github[]
 
 ifndef::env-github,env-gitlab[]
 image:../../App/AppInfo/appicon_128.png[float="left"]
